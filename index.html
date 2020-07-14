@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Javascripting Like a Boss</title>
+
+
+</head>
+<body>
+    <div class="container-0">
+        <h1>Ryan's First Website</h1>
+    </div>
+    <div class="container-1">
+        <h2>GAME #1 - Calculate Your Age in Seconds!</h2>
+        <div class="flex-box-container-1">
+             <div>
+                 <button class="btn btn-primary" onclick="ageInSeconds()">Press</button>
+             </div>
+
+             <div>   
+                 <button class="btn btn-danger" onclick="Restart()">Restart</button>
+             </div>
+        </div>
+
+        <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
+    </div>
+
+    <div class="container-2">  
+        <h2>GAME #2 - Cat Gifs</h2>
+        <button class="btn btn-success" id="cat-gif-button" onclick="generateCatto()">Generate Catto</button>
+        <button class="btn btn-danger" onclick="resetCattos()">Reset Catto's</button>
+        <div class="flex-box-container-2" id="cat-flex-gen"></div>
+      </div>
+
+      <div class="container-3">
+          <h2>GAME #3 - Rock, Paper, Scissors!</h2> <h1>(CTRL/⌘ + R to play again)</h1>
+          <div class="flex-box-rps" id="flex-box-rpss">
+            <button class="btn btn-danger" onclick="resetRPS()">Close Game</button>
+              <img id="rock" src="https://www.gobigrock.com/wp-content/uploads/2016/10/Fieldstone.png" height=250 width=300 length=200 alt="" onclick="rpsc(this)">
+              <img id="paper" src="https://www.custompackagingandproducts.com/wp-content/uploads/2016/06/eco-12x12.png" height=250 width=250   length=180 alt="" onclick="rpsc(this)">
+              <img id="scissor" src="https://www.nightmaretoys.com/wp-content/uploads/2019/11/us-scissors-open.png" height=250 width=200 length=200 alt="" onclick="rpsc(this)">
+      </div>
+
+      <div class="container-4">
+          <h2 id="change-colors">GAME #4 - Button Color Changer</h2>
+          <div class="flex-box-btnc">
+              <form action=""> 
+                  <select name="backdrop" id="backgound" onchange="colorChange(this)">
+                    <option value="rnd">Random</option>
+                    <option value="bl">Blue</option>
+                    <option value="rd">Red</option>
+                    <option value="yl">Yellow</option>
+                    <option value="gr">Green</option>
+                    <option value="drk">Dark</option>
+                    <option value="wh">White</option>
+                    <option value="lightb">Light Blue</option>
+                    <option value="gy">Gray</option>
+                    <option value="ref">Refresh</option>
+                    </select>  
+              </form>
+
+              <button class="btn btn-primary">Blue</button>
+              <button class="btn btn-danger">Red</button>
+              <button class="btn btn-warning">Yellow</button>
+              <button class="btn btn-success">Green</button>
+              <button class="btn btn-dark">Dark</button>
+              <button class="btn btn-light">White</button>
+              <button class="btn btn-info">Light Blue</button>
+              <button class="btn btn-secondary">Gray</button>
+            </div>
+        </div>
+    
+        <div class="container-5">
+            <h2>GAME #5 - Blacjack Bonanza!</h2>
+            <h3><span id="bj-result">LET'S PLAY!</span></h3>
+            <div class="flex-bj-row-1">
+                <div id="your-box">
+                    <h2>You: <span id="your-bj-result">0</span></h2>
+                </div>
+
+                <div id="opp-box">
+                    <h2>Opponent: <span id="bot-bj-result">0</span></h2>
+                </div>
+            </div>
+                <div class="flex-bj-row-2">
+                    <div>
+                        <button class="btn-lg btn-dark mr-7" id="bj-hit-btn">HIT</button>
+                        <button class="btn-lg btn-secondary mr-7" id="bj-stand-btn">STAND</button>
+                        <button class="btn-lg btn-danger mr-7" id="bj-deal-btn">DEAL</button>
+                    </div>
+                </div>
+            <div class="flex-bj-row-3">
+                <table style="border: 5px solid green;">
+                <tr>
+                <th>Score</th>
+                <th>Bot Score</th>
+                <th>Ties</th>
+                </tr>
+                
+                <tr>
+                    <td><span id="Score">0</span></td>
+                    <td><span id="Bot-Score">0</span></td>
+                    <td><span id="Ties">0</span></td>
+                </tr>
+                </table> 
+            
+            
+               
+
+                
+            
+        </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

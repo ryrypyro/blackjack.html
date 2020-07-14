@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Website",
+			"path": "."
+		},
+		{
+			"name": "static",
+			"path": "..\\static"
+		}
+	],
+	"settings": {}
+}

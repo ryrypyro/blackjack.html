@@ -1,0 +1,91 @@
+div.container-1 {
+    background: url('https://wallpapersite.com/images/pages/pic_w/12880.png');
+}
+
+.container-0 {
+    background-color: goldenrod;
+    text-align: center;
+}
+.container-1, .container-2, .container-4, .container-5 {
+    border: 3px solid rgb(0, 83, 207);
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+    
+}
+
+.flex-box-container-1 {
+background: url('https://wallpaperaccess.com/full/675905.jpg');
+}
+
+.container-2 {
+background: url('https://comicvine1.cbsistatic.com/uploads/original/11114/111140127/4881961-cats-cats-28572014-1600-1200.jpg');
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-btnc, .flex-bj-row-1, .flex-bj-row-2, .flex-bj-row-3{
+    display: flex;
+    border: 2px solid red;
+    padding: 20px;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-bj-row-1, .flex-bj-row-2 {
+    background: url('https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1068.jpg'); 
+    color: #ffff33
+}
+
+.flex-bj-row-1 div {
+    border: 2.5px solid #ffff33;
+    padding: 20px;
+    flex: 1; 
+    text-align: center;
+    height: 400px;
+}
+
+.flex-bj-row-2 button {
+    border: 1px solid black; 
+    padding: 20px;
+    
+}
+
+.flex-bj-row-2 div {
+    border: 1px solid #ffff33;
+    padding: 5px; 
+}
+.flex-bj-row-3, th, td, tr{
+    background: url('https://wallpapercave.com/wp/wp2717850.jpg');  
+    color: rgb(255, 255, 255)
+}
+
+
+table, th, td, tr{
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.flex-bj-row-1 img {
+    width: 110px;
+    padding: 20px;
+}
+
+.flex-box-container-1 div {
+    display: flex; 
+    padding: 20px;
+    border: 2px solid yellowgreen;
+    align-items: center; 
+}
+
+
+.flex-box-container-2 img {
+    margin: 5px; color: slategray;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.flex-box-rps img:hover{
+    box-shadow: 5px 5px 5px red;
+}
+
+
+/* style .flex-box-rps divs! */  
